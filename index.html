@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Website</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
 </head>
 <body>
     <header>
@@ -27,22 +26,34 @@
             <h2>Gallery</h2>
             <div class="gallery-slider">
                 <div class="gallery-item">
-                    <img src="photo1.jpg" alt="Photo 1">
+                    <a data-fancybox="gallery" href="photo1.jpg">
+                        <img src="photo1.jpg" alt="Photo 1">
+                    </a>
                 </div>
                 <div class="gallery-item">
-                    <img src="photo2.jpg" alt="Photo 2">
+                    <a data-fancybox="gallery" href="photo2.jpg">
+                        <img src="photo2.jpg" alt="Photo 2">
+                    </a>
                 </div>
                 <div class="gallery-item">
-                    <img src="photo3.jpg" alt="Photo 3">
+                    <a data-fancybox="gallery" href="photo3.jpg">
+                        <img src="photo3.jpg" alt="Photo 3">
+                    </a>
                 </div>
                 <div class="gallery-item">
-                    <img src="photo4.jpg" alt="Photo 4">
+                    <a data-fancybox="gallery" href="photo4.jpg">
+                        <img src="photo4.jpg" alt="Photo 4">
+                    </a>
                 </div>
                 <div class="gallery-item">
-                    <img src="photo5.jpg" alt="Photo 5">
+                    <a data-fancybox="gallery" href="photo5.jpg">
+                        <img src="photo5.jpg" alt="Photo 5">
+                    </a>
                 </div>
                 <div class="gallery-item">
-                    <img src="photo6.jpg" alt="Photo 6">
+                    <a data-fancybox="gallery" href="photo6.jpg">
+                        <img src="photo6.jpg" alt="Photo 6">
+                    </a>
                 </div>
                 <!-- Add more images as needed -->
             </div>
@@ -52,7 +63,7 @@
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>Assalamualaikum,Hello ! I am Nayeem.Welcome to my site.</p>
+            <p>Assalamualaikum, Hello! I am Nayeem. Welcome to my site.</p>
         </div>
     </section>
     
@@ -74,6 +85,8 @@
     </footer>
     
     <!-- Initialize carousel script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var gallerySlider = tns({
@@ -95,6 +108,12 @@
                         slideBy: 1
                     }
                 }
+            });
+
+            // Initialize Fancybox for gallery images
+            $('[data-fancybox="gallery"]').fancybox({
+                transitionEffect: "circular",
+                loop: true
             });
         });
     </script>
