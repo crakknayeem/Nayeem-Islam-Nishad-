@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to My Personal Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-slider">
+                <div class="gallery-item">
+                    <img src="photo1.jpg" alt="Photo 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="photo2.jpg" alt="Photo 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="photo3.jpg" alt="Photo 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="photo4.jpg" alt="Photo 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="photo5.jpg" alt="Photo 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="photo6.jpg" alt="Photo 6">
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+    </section>
+  
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Assalamualaikum,Hello ! I am Nayeem.Welcome to my site.</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-buttons">
+                <a href="https://t.me/nayeem_islam_nishat" class="contact-button telegram">Telegram</a>
+                <a href="https://api.whatsapp.com/send?phone=8801319132387" class="contact-button whatsapp">WhatsApp</a>
+                <a href="https://www.facebook.com/share/Ma97LRpTEcaJMcpP/?mibextid=qi2Omg" class="contact-button facebook">Facebook</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Initialize carousel script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var gallerySlider = tns({
+                container: '.gallery-slider',
+                items: 3, // Display three items at a time
+                slideBy: 1, // Scroll one item at a time
+                autoplay: true,
+                autoplayTimeout: 3000,
+                controls: false,
+                nav: false,
+                loop: true,
+                responsive: {
+                    768: {
+                        items: 3,
+                        slideBy: 1
+                    },
+                    1200: {
+                        items: 4,
+                        slideBy: 1
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
