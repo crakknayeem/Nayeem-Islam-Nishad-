@@ -133,7 +133,7 @@ main {
         transform: translateY(20px);
     }
     100% {
-        opacity: 0;
+        opacity: 0.4 ;
         transform: translateY(0);
     }
 }
