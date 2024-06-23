@@ -3,103 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>My Personal Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Welcome to My Personal Website</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <div class="logo">My Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
     </header>
-    
-    <section id="gallery">
-        <div class="container">
-            <h2>Gallery</h2>
-            <div class="gallery-slider">
-                
-                
-                <div class="gallery-item">
-                    <a data-fancybox="gallery" href="photo3.jpg">
-                        <img src="photo3.jpg" alt="Photo 3">
-                    </a>
-                </div>
-                
-                
-                <div class="gallery-item">
-                    <a data-fancybox="gallery" href="photo6.jpg">
-                        <img src="photo6.jpg" alt="Photo 6">
-                    </a>
-                </div>
-                <!-- Add more images as needed -->
-            </div>
-        </div>
-    </section>
-  
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Assalamualaikum, Hello! I am Nayeem. Welcome to my site.</p>
-        </div>
-    </section>
-    
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <div class="contact-buttons">
-                <a href="https://t.me/nayeem_islam_nishat" class="contact-button telegram">Telegram</a>
-    
-                <a href="https://www.facebook.com/share/Ma97LRpTEcaJMcpP/?mibextid=qi2Omg" class="contact-button facebook">Facebook</a>
-            </div>
-        </div>
-    </section>
-    
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
-        </div>
-    </footer>
-    
-    <!-- Initialize carousel script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var gallerySlider = tns({
-                container: '.gallery-slider',
-                items: 3, // Display three items at a time
-                slideBy: 1, // Scroll one item at a time
-                autoplay: true,
-                autoplayTimeout: 3000,
-                controls: false,
-                nav: false,
-                loop: true,
-                responsive: {
-                    768: {
-                        items: 3,
-                        slideBy: 1
-                    },
-                    1200: {
-                        items: 4,
-                        slideBy: 1
-                    }
-                }
-            });
 
-            // Initialize Fancybox for gallery images
-            $('[data-fancybox="gallery"]').fancybox({
-                transitionEffect: "circular",
-                loop: true
-            });
-        });
-    </script>
+    <main>
+        <section id="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm [Your Name], a passionate student and aspiring scientist.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>[Insert a brief biography about yourself]</p>
+        </section>
+
+
+
+
+
+
+
+
+
+        <section id="favorites">
+            <div class="container">
+                <h2>My Favorite Things</h2>
+                <div id="favorites-list">
+                    <!-- Favorites will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="projects-container">
+                <!-- Add your projects here -->
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>[Description of project 1]</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>[Description of project 2]</p>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Feel free to reach out to me via email at <a href="mailto:example@example.com">example@example.com</a> or follow me on social media.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
