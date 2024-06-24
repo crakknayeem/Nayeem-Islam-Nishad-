@@ -38,9 +38,19 @@ const favoritesList = document.getElementById('favorites-list');
 
 // Example data (replace with your own)
 const favoritesData = [
-    { category: 'Books', name: 'To Kill a Mockingbird', description: 'A classic by Harper Lee.', icon: 'fas fa-book' },
-    { category: 'Movies', name: 'The Shawshank Redemption', description: 'A gripping drama film.', icon: 'fas fa-film' },
-    { category: 'Music', name: 'Bohemian Rhapsody', description: 'Iconic song by Queen.', icon: 'fas fa-music' }
+    { name: 'Paradoxical Sajid ' ,category: 'Books'},
+    { name: 'Train to Busan,Khuda Hafiz' ,category: 'Movies'},
+    { name: '...' , category: 'Music'},
+   {  name: 'Provas,Suriya,Vijay Setupathi' ,category: 'Actor'},
+
+ {  name: 'Sai pallabi,Shruti Hasan' ,category: 'Actress'},
+
+
+
+
+
+
+
 ];
 
 // Function to display favorites
@@ -50,9 +60,9 @@ function displayFavorites() {
         favoritesHTML += `
             <div class="favorite">
                 <i class="${favorite.icon} fa-2x"></i>
-                <h3>${favorite.name}</h3>
+                
                 <p><strong>Category:</strong> ${favorite.category}</p>
-                <p>${favorite.description}</p>
+                <h3>${favorite.name}</h3>
             </div>
         `;
     });
