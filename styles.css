@@ -11,15 +11,17 @@ body {
     line-height: 1.6;
     color: #333;
     overflow-x: hidden; /* Prevent horizontal scrolling */
+  
 }
 
 header {
-    background: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(135deg, #800020, black);
     color: #fff;
     padding: 1rem 0;
     position: fixed;
     width: 100%;
     z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -156,8 +158,9 @@ section {
 #about {
     position: relative;
     padding: 4rem 2rem;
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-    color: #fff;
+ /*   background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);*/
+  background:rgb(0, 61, 36);
+  color: #fff;
     text-align: center;
     border-radius: 15px;
     overflow: hidden;
@@ -326,7 +329,7 @@ footer {
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, darkgreen, beige);
     color: #333;
 }
 
@@ -372,8 +375,11 @@ nav ul li a:hover {
 section {
     padding: 40px 0;
     text-align: center;
-    background-color: #fff;
+    background:#212121;
+  color:white;
+     
     margin-bottom: 20px;
+  border-radius: 10px;
 }
 
 section h2 {
@@ -382,7 +388,8 @@ section h2 {
 }
 
 .favorite {
-    background-color: #e7e7e7;
+    background:rgb(0, 61, 36);
+  color:white;
     margin: 10px 0;
     padding: 20px;
     border-radius: 10px;
