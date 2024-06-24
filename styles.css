@@ -98,7 +98,7 @@ main {
     backdrop-filter: blur(0.4px);
 } 
 
-#hero h2, #hero p, #hero a {
+#hero h2, #hero p{
     z-index: 2;
     position: relative;
     animation: fadeIn 2s ease-in-out forwards;
